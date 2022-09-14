@@ -4,22 +4,16 @@
     <head>
         <meta charset = "utf-8">
         <title>Entrainement joueur</title>
-        <link rel="stylesheet" href="./style.css">
     </head>
 
-    <body> 
+    <body onload="showDropDown()"> 
         <h1>Jour de musculation</h1>
         <script src="./script.js"></script>
 
         <div class="dropdown">
-            <div class="buttonCenter">
+            
                 
-            <button class="dropbtn" onclick="showExercice()"> 
-                
-                Choix exercices
-                
-            </button>
-            </div>
+            <button class="dropbtn" onclick="showExercice()"> Choix exercices </button>
             <div id="myExo" class="dropdown-content">
                 <input type="text" placeholder="Recherche.." id="myInput" onkeyup="filterFunction()">
                 <a href="#execiceone">Bench Press</a>
