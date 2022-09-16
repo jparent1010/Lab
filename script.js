@@ -64,6 +64,7 @@ function showDropDown(){
     };
 
     function filterAndRenderOptions(){
+        
         var exercices = exo.filter(function(exercice){
             var searchterm = exercice.toLowerCase();
             return searchterm.startsWith(inputElement.value.toLowerCase());
@@ -74,8 +75,6 @@ function showDropDown(){
         else{
             renderOptions(exercices);
         }
-
-
     }
 
     function renderOptions(opts){
