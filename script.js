@@ -65,7 +65,8 @@ function showDropDown(){
 
     function filterAndRenderOptions(){
         var exercices = exo.filter(function(exercice){
-            return exercice.startsWith(inputElement.value);
+            var searchterm = exercice.toLowerCase();
+            return searchterm.startsWith(inputElement.value.toLowerCase());
         });
         if (exercices.lenght===0){
             renderOptions(["No results found !"]);
